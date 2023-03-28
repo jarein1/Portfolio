@@ -13,7 +13,8 @@
 </head>
 <body>
    <div class="page1">
-        <div class="nav">
+    <div class="nav_bar" id="nav_bar">
+        <div class="nav" id="nav">
             
             <h2 class="name">
                 <i class="fa-sharp fa-solid fa-land-mine-on fa-shake" style="color: #000000;"> </i>Aniket !</h2>
@@ -27,14 +28,14 @@
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="index.html">Home</a>
-              <a href="#">resume</a>
-              <a href="service">services</a>
-              <a href="contact.html">Contact</a>
+              <a href="index.html"onclick="closeNav()">Home</a>
+              <a href="#" onclick="closeNav()">resume</a>
+              <a href="#service" onclick="closeNav()">services</a>
+              <a href="contact.html"onclick="closeNav()">Contact</a>
             </div>
           </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-          
+          <span style="font-size:30px;cursor:pointer" onclick="openNav();" onclick="hideNav();">&#9776;</span>
+   </div>
         <div class ="drop" id="text-drop">
             <div class="h">Hey!</div>
             <div class="e">I'm</div>
@@ -44,11 +45,11 @@
    </div>
         </div>
           <p>Digital product designer with years of experience under my belt. I specialize in creating websites and mobile experiences for projects in the lifestyle, design, and fashion industries.</p>
+          <hr style="height:5px;border-width:0;color:rgb(10, 10, 10);background-color:black">
    </div>
     </div>
-    <hr>
     <div class="service" id="service">
-      <p>⁕ services ⁕</p>
+      <p style="text-shadow: 2px 2px #e00909;">⁕ services ⁕</p>
       <p>My broad set of services</p>
         <div class="column2" style="background-color: rgb(235, 217, 193); ">
           <div class="inside2" id="i0"  style="font-size: 54px;" >
@@ -70,6 +71,19 @@
             <p > <a href="#">UI/UX DESIGN</a></p>
           </div>
       </div>
+      <div class="contact-me">
+        <h1>Get in touch with me today !</h1>
+        <div class="location">
+          <p>📍 Bhalobase Building | siliguri- 734001</p>
+        </div>
+        <div class="call">
+          <p>📞 +91 9641114987</p>
+        </div>
+        <div class="mail"><p>📧 aniket4987jrn@gmail.com</p>
+        </div>
+        
+      </div>
+
 
     
    <script src="index.js"></script>
