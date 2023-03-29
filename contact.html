@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Portfolio</title>
+   <link rel="shortcut icon" href="/f.jpg" type="image/x-icon">
+
+    <!-- --------------- style section -------------- -->
+
+    <style>
+        .con-con{
+           align-items: center;
+            background-color: rgb(235, 217, 193);
+            padding: 50px;
+
+        }
+        .con-container{
+            padding-top: 50px;
+            background-color: rgb(221, 227, 201);
+            padding-left: 10vh;
+            width: 50%;
+            padding: 40px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+input{
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+}
+.con-con h1{
+    text-shadow: 3px 3px rgba(255, 0, 0, 0.611);
+    font-size: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    align-self: center;
+    font-weight: 600;
+    padding-bottom: 40px;
+    width: 100%;
+}
+.btn{
+    padding-top: 40px;
+    outline: 0;
+    width: 100%;
+    text-align: center;
+}
+ button {
+    outline: 0;
+    height: 9vh;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+ }
+ @media screen and (max-width: 710px){
+    .con-container{
+        width: 100%;
+    }
+    .con-con h1{
+        font-size: 7vh;
+    }
+
+ }
+    </style>
 </head>
 <body>
 
@@ -26,31 +92,36 @@
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="index.html">Home</a>
-              <a href="#">resume</a>
-              <a href="#">about</a>
-              <a href="contact.html">Contact</a>
+              <a href="index.html" onclick="closeNav()">Home</a>
+              <a href="#" onclick="closeNav()">resume</a>
+              <a href="#" onclick="closeNav()">about</a>
+              <a href="contact.html" onclick="closeNav()">Contact</a>
             </div>
           </div>
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
-      <div class="contact" id="contact" style="color: #000000;">
-           <h1> Lets talk about <br> our next project</h1>
-           <div class="im">
-            <img src="https://assets.website-files.com/63c288b3f449c659a89baadb/63c5271a739f8d4e64b6a285_ArrowAboutA.svg" loading="lazy" alt="" class="arrow">
-           </div>
-            <div class="txt">
-         <input class="text" type="text" placeholder="Name" style="border:none  none none;"> <br>
-         <input type="number" name="" id="" class="text" style="overflow:hidden"placeholder="Number"><br>
-          <input type="email" name="" id="" class="text" placeholder="Email"> <br>
-          <input type="text" name="" id=""class="text" placeholder="Message" style="height: 30vh; width: 50vh; word-break: break-all;"><br>
-         <button class="btn1" style="width: 30vh; height:9vh;">Submit</button>
+
+<div class="con-con">
+    <h1> Lets talk about <br> our next project</h1>
+        
+      <div class="con-container">
+        <label for="uname"><b>Name :</b></label>
+        <input type="text" placeholder="Enter name" required>
+        
+        <label for="Email"><b>Email :</b></label>
+        <input type="email" placeholder=" Enter email" required>
+
+        <label for="Phone"><b>Phone no :</b></label>
+        <input type="number" placeholder="Enter phone number" required>
+
+        <label for=""><b>Message :</b></label>
+        <input type="message" placeholder=" Leave a message." style="height:17vh;">
+        <div class="btn">
+            <button type="submit">Submit</button>
         </div>
       </div>
-
-
-   
+    </div>
+    
    <script src="index.js"></script>
 </body>
 </html>
-
