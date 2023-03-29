@@ -1,12 +1,15 @@
 
 //  Click Button Animation
 function openNav() {
-    document.getElementById("myNav").style.height = "80%";
+    document.getElementById("myNav").style.height = "100%";
+    document.getElementById("span").style.display="none";
   }
   
   function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.height = "0";
+    document.getElementById("span").style.display="";
   }
+
   
   //Text Drop Animation
   $(document).ready(function(){
